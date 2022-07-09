@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.news-and-events-title {
+  & > h2 {
+    display: flex;
+    align-items: center;
+    font-size: $fontsize-l;
+    font-family: $fontfamily-mincho;
+    margin-bottom: 32px;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $fontsize-xxl;
+    }
+
+    .caption {
+      font-size: $fontsize-m;
+      font-family: $fontfamily-gothic;
+      font-weight: 400;
+      margin-left: 16px;
+    }
+  }
+}
