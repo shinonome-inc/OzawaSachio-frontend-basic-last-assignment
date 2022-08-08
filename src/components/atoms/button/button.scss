@@ -1,0 +1,34 @@
+@use "../../variables" as *;
+
+a {
+  position: absolute;
+  background-color: $black;
+  transition: background-color 0.2s;
+  color: $white;
+  text-align: center;
+  font-size: $fontsize-s;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 200px;
+    height: 55px;
+    padding: 17.5px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 150px;
+    height: 55px;
+    padding: 17.5px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 180px;
+    height: 45px;
+    padding: 12.5px;
+  }
+}
+
+a:hover {
+  background-color: $orange_bistre;
+  color: $white;
+  text-decoration: none;
+}
