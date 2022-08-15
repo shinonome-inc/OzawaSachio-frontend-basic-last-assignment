@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.news-and-events-more {
+  align-self: flex-end;
+  margin-top: 16px;
+  cursor: pointer;
+  color: $black;
+  text-decoration: none;
+  font-size: $fontsize-s;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    color: $gray_nobel;
+    text-decoration: none;
+  }
+
+  & > i {
+    margin-left: 16px;
+  }
+}

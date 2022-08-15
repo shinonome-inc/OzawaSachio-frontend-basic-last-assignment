@@ -1,0 +1,30 @@
+{
+  "name": "frontend-basic-last-assignment-2021",
+  "version": "1.0.0",
+  "main": "src/page/index.html",
+  "repository": "https://github.com/shinonome-inc/frontend-basic-last-assignment-2021.git",
+  "author": "PG-frontend-teachers",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build-sass": "gulp"
+  },
+  "engines": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-viewport": "^6.1.11",
+    "@storybook/html": "^6.1.11",
+    "babel-loader": "^8.2.2",
+    "chromatic": "^5.5.0",
+    "css-loader": "^5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0"
+  }
+}

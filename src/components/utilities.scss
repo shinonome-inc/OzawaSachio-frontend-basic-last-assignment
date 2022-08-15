@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+body {
+  font-family: $fontfamily-gothic;
+}
+
+section {
+  margin-bottom: 120px;
+}
