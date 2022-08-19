@@ -1,54 +1,44 @@
 @use "../../variables" as *;
 
-.background-color {
-  background-color: $black;
-}
-
-p {
-  font-style: normal;
-  color: $white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow-wrap: break-word;
-  word-break: keep-all;
-}
-
-.title {
-  font-family: "Noto Serif JP";
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  @media screen and (min-width: $breakpoint-lg) {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 54px;
-    padding: 52px 20px 0px;
+.message {
+  p {
+    font-style: normal;
+    color: $black;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    margin-bottom: 0;
   }
 
-  @media screen and (max-width: $breakpoint-lg) {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    padding: 32px 20px 0px;
-  }
-}
+  .title {
+    font-family: $fontfamily-mincho;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 36px;
+      line-height: 54px;
+      padding: 52px 20px 0px;
+    }
 
-.description {
-  font-family: "Noto Sans JP";
-  @media screen and (min-width: $breakpoint-lg) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 36px;
-    padding: 0px 20px 52px;
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 32px 20px 0px;
+    }
   }
 
-  @media screen and (max-width: $breakpoint-lg) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    padding: 0px 20px 32px;
+  .description {
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 14px;
+      line-height: 36px;
+      padding: 0px 20px 52px;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: 14px;
+      line-height: 28px;
+      padding: 0px 20px 32px;
+    }
   }
 }
