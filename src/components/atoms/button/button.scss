@@ -1,17 +1,15 @@
 @use "../../variables" as *;
 
 .last-assignment-button {
+  display: block;
   background-color: $black;
   transition: background-color 0.2s;
   color: $white;
   text-align: center;
   font-size: $fontsize-s;
-
-  @media screen and (min-width: $breakpoint-lg) {
-    width: 200px;
-    height: 55px;
-    padding: 17.5px;
-  }
+  width: 200px;
+  height: 55px;
+  padding: 17.5px;
 
   @media screen and (max-width: $breakpoint-lg) {
     width: 150px;
