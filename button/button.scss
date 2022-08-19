@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .last-assignment-button {
+  display: block;
   background-color: $black;
   transition: background-color 0.2s;
   color: $white;
