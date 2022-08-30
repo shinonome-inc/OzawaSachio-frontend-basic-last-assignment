@@ -1,20 +1,13 @@
 @use "../../variables" as *;
 
 .message {
-  p {
-    font-style: normal;
-    color: $black;
-    text-align: center;
-    overflow-wrap: break-word;
-    word-break: keep-all;
-    margin-bottom: 0;
-  }
+  color: $black;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: keep-all;
 
   .title {
     font-family: $fontfamily-mincho;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     @media screen and (min-width: $breakpoint-lg) {
       font-size: 36px;
       line-height: 54px;
