@@ -8,11 +8,9 @@
 
   .title {
     font-family: $fontfamily-mincho;
-    @media screen and (min-width: $breakpoint-lg) {
-      font-size: 36px;
-      line-height: 54px;
-      padding: 52px 20px 0px;
-    }
+    font-size: 36px;
+    line-height: 54px;
+    padding: 52px 20px 0px;
 
     @media screen and (max-width: $breakpoint-lg) {
       font-size: 20px;
@@ -22,16 +20,15 @@
   }
 
   .description {
-    @media screen and (min-width: $breakpoint-lg) {
-      font-size: 14px;
-      line-height: 36px;
-      padding: 0px 20px 52px;
-    }
+    font-size: 14px;
+    line-height: 36px;
+    padding: 0px 20px 52px;
 
     @media screen and (max-width: $breakpoint-lg) {
       font-size: 14px;
       line-height: 28px;
       padding: 0px 20px 32px;
+      margin-bottom: 0;
     }
   }
 }
