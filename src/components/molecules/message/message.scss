@@ -1,0 +1,35 @@
+@use "../../variables" as *;
+
+.message {
+  color: $black;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+
+  .title {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-xl;
+    line-height: 54px;
+    padding: 52px 20px 0px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: $fontsize-l;
+      line-height: 30px;
+      padding: 32px 20px 0px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .description {
+    font-size: $fontsize-s;
+    line-height: 36px;
+    padding: 0px 20px 52px;
+    margin-bottom: 0;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      line-height: 28px;
+      padding: 0px 20px 32px;
+    }
+  }
+}
