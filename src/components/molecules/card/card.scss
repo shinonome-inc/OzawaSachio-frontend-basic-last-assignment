@@ -1,0 +1,58 @@
+@use "../../variables" as *;
+
+.last-assignment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card-img {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: 0.5s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+    .text-title {
+      position: absolute;
+      top: 0px;
+      left: 6px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      font-family: "Roboto", "Noto Sans JP", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      color: $orange_bistre;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+    .white-triangle {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      top: 0px;
+      left: 0px;
+      border-top: 100px solid $white;
+      border-left: 100px solid $white;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid transparent;
+    }
+  }
+
+  .card-text {
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-s;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 32px;
+  }
+}
