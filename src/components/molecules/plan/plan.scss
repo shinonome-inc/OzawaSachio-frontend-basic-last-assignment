@@ -1,1 +1,69 @@
 @use "../../variables" as *;
+.last-assignment-plan {
+  text-align: center;
+  display: flex;
+  font-family: $fontfamily-gothic;
+  .last-assignment-daytime-plan {
+    list-style: none;
+    li:nth-child(1) {
+      font-weight: 700;
+      color: $white;
+      background-color: $orange_zorba;
+    }
+    li:nth-child(2) {
+      font-weight: 700;
+      color: $orange_bistre;
+      background-color: $gray_desertStorm;
+      border: 1px solid $gray_gainsboro;
+      .¥5000 {
+        font-size: $fontsize-xxl;
+      }
+      .¥5000::first-letter {
+        font-size: $fontsize-l;
+      }
+      .monthly-rate {
+        font-weight: 400;
+      }
+    }
+    li:nth-child(3),
+    li:nth-child(4),
+    li:nth-child(5),
+    li:nth-child(6) {
+      font-weight: 400;
+      border: 1px solid $gray_gainsboro;
+    }
+  }
+  .last-assignment-standard-plan {
+    list-style: none;
+    border: 5px solid $orange_bistre;
+    margin: 0px;
+    padding: 0px;
+    li:nth-child(1) {
+      font-weight: 700;
+      color: $white;
+      background-color: $orange_bistre;
+    }
+    li:nth-child(2) {
+      font-weight: 700;
+      color: $orange_bistre;
+      background-color: $gray_desertStorm;
+      border: 1px solid $gray_gainsboro;
+      .¥15000 {
+        font-size: $fontsize-xxl;
+      }
+      .¥15000::first-letter {
+        font-size: $fontsize-l;
+      }
+      .monthly-rate {
+        font-weight: 400;
+      }
+    }
+    li:nth-child(3),
+    li:nth-child(4),
+    li:nth-child(5),
+    li:nth-child(6) {
+      font-weight: 400;
+      border: 1px solid $gray_gainsboro;
+    }
+  }
+}
