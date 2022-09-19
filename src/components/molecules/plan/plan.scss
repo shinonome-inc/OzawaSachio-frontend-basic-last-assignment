@@ -1,69 +1,88 @@
 @use "../../variables" as *;
 .last-assignment-plan {
   text-align: center;
-  display: flex;
   font-family: $fontfamily-gothic;
-  .last-assignment-daytime-plan {
+  @media screen and (max-width: $breakpoint-md) {
+    display: flex;
+  }
+
+  ul:nth-child(odd) {
     list-style: none;
+    padding-left: 0px;
+    font-weight: 700;
     li:nth-child(1) {
-      font-weight: 700;
+      font-size: $fontsize-l;
       color: $white;
       background-color: $orange_zorba;
+      padding: 20px;
     }
     li:nth-child(2) {
-      font-weight: 700;
       color: $orange_bistre;
       background-color: $gray_desertStorm;
       border: 1px solid $gray_gainsboro;
       .¥5000 {
         font-size: $fontsize-xxl;
+        padding: 24px;
+        margin-bottom: -24px;
       }
       .¥5000::first-letter {
         font-size: $fontsize-l;
       }
       .monthly-rate {
         font-weight: 400;
+        padding: 24px;
+        margin-top: -24px;
       }
     }
     li:nth-child(3),
     li:nth-child(4),
     li:nth-child(5),
     li:nth-child(6) {
+      font-size: $fontsize-s;
       font-weight: 400;
       border: 1px solid $gray_gainsboro;
+      padding: 20px;
     }
   }
-  .last-assignment-standard-plan {
+
+  ul:nth-child(even) {
     list-style: none;
-    border: 5px solid $orange_bistre;
-    margin: 0px;
-    padding: 0px;
+    outline: 5px solid $orange_bistre;
+    outline-offset: -5px;
+    padding-left: 0px;
+    font-weight: 700;
     li:nth-child(1) {
-      font-weight: 700;
+      font-size: $fontsize-l;
       color: $white;
       background-color: $orange_bistre;
+      padding: 20px;
     }
     li:nth-child(2) {
-      font-weight: 700;
       color: $orange_bistre;
       background-color: $gray_desertStorm;
       border: 1px solid $gray_gainsboro;
       .¥15000 {
         font-size: $fontsize-xxl;
+        padding: 24px;
+        margin-bottom: -24px;
       }
       .¥15000::first-letter {
         font-size: $fontsize-l;
       }
       .monthly-rate {
         font-weight: 400;
+        padding: 24px;
+        margin-top: -24px;
       }
     }
     li:nth-child(3),
     li:nth-child(4),
     li:nth-child(5),
     li:nth-child(6) {
+      font-size: $fontsize-s;
       font-weight: 400;
       border: 1px solid $gray_gainsboro;
+      padding: 20px;
     }
   }
 }
