@@ -4,59 +4,78 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $white_smoke;
   .card-img {
     position: relative;
     overflow: hidden;
     img {
       width: 100%;
-      @media screen and (max-width: $breakpoint-sm) {
-        transition: 0.5s ease;
-      }
     }
-    @media screen and (max-width: $breakpoint-sm) {
+    @media screen and (min-width: $breakpoint-sm) {
       &:hover {
         img {
+          transition: 0.5s ease;
           transform: scale(1.2);
         }
       }
     }
   }
-  .text-title {
-    position: absolute;
-    top: 0px;
-    left: 6px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    font-family: "Roboto", "Noto Sans JP", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    color: $orange_bistre;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
+
   .white-triangle {
     position: absolute;
     width: 150px;
     height: 150px;
     top: 0px;
     left: 0px;
-    border-top: 100px solid $white;
-    border-left: 100px solid $white;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    background: linear-gradient(to bottom right, $white 50%, transparent 50%);
+    content: "CONCEPT";
+    font-family: $fontfamily-gothic;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: $orange_bistre;
   }
-}
 
-.card-text {
-  font-family: $fontfamily-gothic;
-  font-size: $fontsize-s;
-  font-weight: 400;
-  line-height: 33px;
-  letter-spacing: 0em;
-  text-align: left;
-  padding: 32px;
+  .card-text {
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-s;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 32px;
+    margin-bottom: 0px;
+  }
+
+  .card-button {
+    display: block;
+    background-color: $black;
+    transition: background-color 0.2s;
+    color: $white;
+    text-align: center;
+    font-size: $fontsize-s;
+    width: 200px;
+    height: 55px;
+    padding: 17.5px;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      width: 150px;
+      height: 55px;
+      padding: 17.5px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      width: 180px;
+      height: 45px;
+      padding: 12.5px;
+    }
+
+    &:hover {
+      background-color: $orange_bistre;
+      color: $white;
+      text-decoration: none;
+    }
+  }
 }
