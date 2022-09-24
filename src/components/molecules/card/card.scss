@@ -12,10 +12,15 @@
       width: 100%;
       transition: 0.5s ease;
     }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
     @media screen and (max-width: 500px) {
       &:hover {
         img {
-          transform: scale(1.2);
+          transform: none;
         }
       }
     }
