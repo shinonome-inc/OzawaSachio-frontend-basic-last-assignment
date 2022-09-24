@@ -42,7 +42,7 @@
   }
 }
 
-ul:nth-child(even) {
+.last-assignment-plan:nth-child(even) {
   outline: 5px solid $orange_bistre;
   outline-offset: -5px;
   li:nth-child(1) {
