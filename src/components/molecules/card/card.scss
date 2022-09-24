@@ -17,7 +17,7 @@
         transform: scale(1.2);
       }
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: $breakpoint-sm) {
       &:hover {
         img {
           transform: none;
