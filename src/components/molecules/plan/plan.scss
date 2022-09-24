@@ -1,0 +1,51 @@
+@use "../../variables" as *;
+
+.last-assignment-plan {
+  text-align: center;
+  font-family: $fontfamily-gothic;
+  list-style: none;
+  padding-left: 0px;
+  font-size: $fontsize-s;
+  font-weight: 400;
+  li:nth-child(1) {
+    font-size: $fontsize-l;
+    color: $white;
+    font-weight: 700;
+    background-color: $orange_zorba;
+    padding: 20px;
+  }
+  li:nth-child(2) {
+    color: $orange_bistre;
+    font-weight: 700;
+    background-color: $gray_desertStorm;
+    border: 1px solid $gray_gainsboro;
+    .amount-displayed {
+      font-size: $fontsize-xxl;
+      padding: 24px;
+      margin-bottom: -24px;
+    }
+    .amount-displayed::first-letter {
+      font-size: $fontsize-l;
+    }
+    .monthly-rate {
+      font-weight: 400;
+      padding: 24px;
+      margin-top: -24px;
+    }
+  }
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(5),
+  li:nth-child(6) {
+    padding: 20px;
+    border: 1px solid $gray_gainsboro;
+  }
+}
+
+.last-assignment-plan:nth-child(even) {
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+  li:nth-child(1) {
+    background-color: $orange_bistre;
+  }
+}
