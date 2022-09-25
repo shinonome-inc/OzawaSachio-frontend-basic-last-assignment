@@ -1,1 +1,33 @@
 @use "../../variables" as *;
+
+.last-assignment-news {
+  width: fit-content;
+  article {
+    width: 460px;
+    background-color: $white;
+    border: 1px solid $gray_gainsboro;
+    font-weight: 400;
+    font-family: $fontfamily-gothic;
+    .date {
+      font-size: $fontsize-xs;
+      color: $gray_nobel;
+      margin-top: 18px;
+      margin-left: 20px;
+    }
+    .article-title {
+      font-size: $fontsize-m;
+      margin-left: 20px;
+      margin-bottom: 18px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .news-and-events-more {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    padding-top: 32px;
+    width: 24%;
+  }
+}
