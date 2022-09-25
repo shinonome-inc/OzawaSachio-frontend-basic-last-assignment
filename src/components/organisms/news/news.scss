@@ -1,34 +1,39 @@
 @use "../../variables" as *;
 
 .last-assignment-news {
-  article {
-    background-color: $white;
-    border: 1px solid $gray_gainsboro;
-    font-weight: 400;
-    padding-top: 18px;
-    padding-left: 20px;
-    padding-bottom: 18px;
-    .date {
-      font-size: $fontsize-xs;
-      color: $gray_nobel;
-    }
-    .article-title {
-      font-size: $fontsize-m;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      transition: color 0.2s ease;
-      cursor: pointer;
-      &:hover {
+  .article-list {
+    padding-bottom: 30px;
+    article {
+      background-color: $white;
+      border: 1px solid $gray_gainsboro;
+      border-bottom: none;
+      font-weight: 400;
+      padding: 19px 20px 18px;
+      .date {
+        font-size: $fontsize-xs;
         color: $gray_nobel;
       }
+      .article-title {
+        font-size: $fontsize-m;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: color 0.2s ease;
+        cursor: pointer;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+    }
+    .updating-theme {
+      border-bottom: 1px solid $gray_gainsboro;
+      padding-bottom: 19px;
     }
   }
   .news-and-events-more {
     display: block;
     margin-left: auto;
     margin-right: 0px;
-    padding-top: 32px;
     width: fit-content;
   }
 }
