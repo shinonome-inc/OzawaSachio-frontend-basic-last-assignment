@@ -21,6 +21,11 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      transition: color 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        color: $gray_nobel;
+      }
     }
   }
   .news-and-events-more {
