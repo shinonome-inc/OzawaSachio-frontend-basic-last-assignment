@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+
+.last-assignment-header {
+  display: flex;
+  background-color: $black_50;
+  .navbar-brand {
+    width: 100%;
+    margin: 30px;
+    img.xl {
+      display: block;
+    }
+    img.lg {
+      display: none;
+    }
+  }
+  .navbar-collapse .navbar-nav .nav-item {
+    list-style: none;
+    margin: 0px;
+    .nav-link {
+      color: $white;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-xl) {
+    background-color: $black;
+    .header-title {
+      width: 100%;
+      margin: 16px;
+      img.xl {
+        display: none;
+      }
+      img.lg {
+        display: block;
+      }
+    }
+  }
+}
