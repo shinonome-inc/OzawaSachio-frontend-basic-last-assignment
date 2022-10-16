@@ -1,9 +1,9 @@
 <header class="last-assignment-header">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-xl">
     <a class="navbar-brand" href="#">
-      <img src="../../../img/logo-xl.png" class="xl" />
-      <img src="../../../img/logo-lg.png" class="lg" />
+      <img src="../../../img/logo-xl.png" />
     </a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -17,12 +17,38 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">HOME</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONCEPT</a>
+        <li class="nav-item dropdown">
+          <div class="concept-button">
+            <a class="nav-link" href="#">CONCEPT</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#header-menu-id-dropdown"
+              aria-controls="header-menu-id-dropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img class="plus-button" src="../../../img/icon.svg" />
+              <img class="minus-button" src="../../../img/minus-icon.svg" />
+            </button>
+          </div>
+          <div class="dropdown-menu" id="header-menu-id-dropdown">
+            <a class="dropdown-item" href="#">ブログアーカイブ</a>
+            <a class="dropdown-item" href="#">お知らせアーカイブ</a>
+            <a class="dropdown-item" href="#">イベントアーカイブ</a>
+            <a class="dropdown-item" href="#">インタビューアーカイブ</a>
+            <a class="dropdown-item" href="#">FAQページ</a>
+            <a class="dropdown-item" href="#">固定ページ(デフォルト)</a>
+            <a class="dropdown-item" href="#">CONCEPT</a>
+            <a class="dropdown-item" href="#">SERVICE</a>
+            <a class="dropdown-item" href="#">FLOOR</a>
+            <a class="dropdown-item" href="#">ACCESS</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">SERVICE</a>

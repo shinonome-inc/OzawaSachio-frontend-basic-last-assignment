@@ -1,36 +1,87 @@
 @use "../../variables" as *;
 
 .last-assignment-header {
-  display: flex;
-  background-color: $black_50;
-  .navbar-brand {
-    width: 100%;
-    margin: 30px;
-    img.xl {
-      display: block;
+  background-color: $black;
+  font-family: $fontfamily-gothic;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-s;
+  .navbar {
+    padding: 0px;
+    .navbar-brand {
+      margin: 16px;
+      img {
+        width: 120px;
+        height: 20px;
+      }
     }
-    img.lg {
-      display: none;
+    .navbar-collapse .navbar-nav .nav-item {
+      .nav-link {
+        color: $white;
+        padding: 16px;
+      }
+      .concept-button {
+        display: flex;
+        justify-content: space-between;
+        .navbar-toggler[aria-expanded="false"] {
+          .minus-button {
+            display: none;
+          }
+        }
+        .navbar-toggler[aria-expanded="true"] {
+          .plus-button {
+            display: none;
+          }
+        }
+      }
     }
-  }
-  .navbar-collapse .navbar-nav .nav-item {
-    list-style: none;
-    margin: 0px;
-    .nav-link {
-      color: $white;
+    .dropdown-menu {
+      background-color: $black;
+      padding: 0px;
+      margin: 0px;
+      .dropdown-item {
+        width: 220px;
+        background-color: $black;
+        color: $white;
+        font-family: $fontfamily-gothic;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $fontsize-s;
+        padding: 18px 0px 18px 28px;
+      }
     }
   }
 
-  @media screen and (max-width: $breakpoint-xl) {
-    background-color: $black;
-    .header-title {
-      width: 100%;
-      margin: 16px;
-      img.xl {
-        display: none;
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    .navbar {
+      .navbar-brand {
+        margin: 16px;
+        img {
+          width: 140px;
+          height: 24px;
+        }
       }
-      img.lg {
-        display: block;
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              margin: 0px;
+              padding: 24px;
+            }
+            .dropdown-menu {
+              border-radius: 0;
+            }
+            &:hover {
+              .nav-link {
+                color: $gray-nobel;
+              }
+              .dropdown-menu {
+                display: block;
+              }
+            }
+          }
+        }
       }
     }
   }
