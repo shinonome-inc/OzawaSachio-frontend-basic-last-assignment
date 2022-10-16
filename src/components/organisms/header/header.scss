@@ -78,9 +78,17 @@
             .nav-link {
               margin: 0px;
               padding: 20px;
+              transition: color 0.3s;
             }
             .dropdown-menu {
               border-radius: 0;
+              .dropdown-item {
+                background-color: $black;
+                transition: all 0.3s ease;
+                &:hover {
+                  background-color: $orange_bistre;
+                }
+              }
             }
             &:hover {
               .nav-link {
