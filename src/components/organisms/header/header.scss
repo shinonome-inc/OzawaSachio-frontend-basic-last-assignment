@@ -2,9 +2,6 @@
 
 .last-assignment-header {
   background-color: $black;
-  font-family: $fontfamily-gothic;
-  font-style: normal;
-  font-weight: 400;
   font-size: $fontsize-s;
   .navbar {
     padding: 0px;
@@ -15,6 +12,12 @@
         height: 20px;
       }
     }
+    .navbar-toggler {
+      outline: none;
+    }
+    .collapsing {
+      display: block;
+    }
     .navbar-collapse .navbar-nav .nav-item {
       .nav-link {
         color: $white;
@@ -23,6 +26,9 @@
       .concept-button {
         display: flex;
         justify-content: space-between;
+        .navbar-toggler {
+          outline: none;
+        }
         .navbar-toggler[aria-expanded="false"] {
           .minus-button {
             display: none;
@@ -43,9 +49,6 @@
         width: 220px;
         background-color: $black;
         color: $white;
-        font-family: $fontfamily-gothic;
-        font-style: normal;
-        font-weight: 400;
         font-size: $fontsize-s;
         padding: 18px 0px 18px 28px;
       }
@@ -53,10 +56,17 @@
   }
 
   @media screen and (min-width: $breakpoint-xl) {
+    position: relative;
+    height: 90px;
     background-color: $black_50;
     .navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto 16px;
       .navbar-brand {
-        margin: 16px;
         img {
           width: 140px;
           height: 24px;
@@ -67,7 +77,7 @@
           .nav-item {
             .nav-link {
               margin: 0px;
-              padding: 24px;
+              padding: 20px;
             }
             .dropdown-menu {
               border-radius: 0;
