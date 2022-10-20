@@ -4,9 +4,11 @@
   background-color: $black;
   font-size: $fontsize-s;
   .navbar {
+    margin: 0px;
     padding: 0px;
     .navbar-brand {
       margin: 16px;
+      padding: 0px;
       img {
         width: 120px;
         height: 20px;
@@ -14,6 +16,7 @@
     }
     .navbar-toggler {
       outline: none;
+      padding: 20.5px 16px;
     }
     .collapsing {
       display: block;
@@ -28,6 +31,7 @@
         justify-content: space-between;
         .navbar-toggler {
           outline: none;
+          padding: 4px 12px;
         }
         .navbar-toggler[aria-expanded="false"] {
           .minus-button {
@@ -50,23 +54,17 @@
         background-color: $black;
         color: $white;
         font-size: $fontsize-s;
-        padding: 18px 0px 18px 28px;
+        padding: 15px 0px 15px 28px;
       }
     }
   }
 
   @media screen and (min-width: $breakpoint-xl) {
-    position: relative;
-    height: 90px;
     background-color: $black_50;
+    height: 90px;
     .navbar {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto 16px;
       .navbar-brand {
+        margin: 30px;
         img {
           width: 140px;
           height: 24px;
@@ -74,17 +72,20 @@
       }
       .navbar-collapse {
         .navbar-nav {
+          padding-right: 30px;
           .nav-item {
             .nav-link {
               margin: 0px;
-              padding: 20px;
+              padding: 35px 20px;
               transition: color 0.3s;
             }
             .dropdown-menu {
               border-radius: 0;
+              margin: -2px;
               .dropdown-item {
                 background-color: $black;
                 transition: all 0.3s ease;
+                padding: 18px;
                 &:hover {
                   background-color: $orange_bistre;
                 }
