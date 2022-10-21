@@ -1,0 +1,107 @@
+@use "../../variables" as *;
+
+.last-assignment-header {
+  background-color: $black;
+  font-size: $fontsize-s;
+  .navbar {
+    margin: 0px;
+    padding: 0px;
+    .navbar-brand {
+      margin: 16px;
+      padding: 0px;
+      img {
+        width: 120px;
+        height: 20px;
+      }
+    }
+    .navbar-toggler {
+      outline: none;
+      padding: 20.5px 16px;
+    }
+    .collapsing {
+      display: block;
+    }
+    .navbar-collapse .navbar-nav .nav-item {
+      .nav-link {
+        color: $white;
+        padding: 16px;
+      }
+      .concept-button {
+        display: flex;
+        justify-content: space-between;
+        .navbar-toggler {
+          outline: none;
+          padding: 4px 12px;
+        }
+        .navbar-toggler[aria-expanded="false"] {
+          .minus-button {
+            display: none;
+          }
+        }
+        .navbar-toggler[aria-expanded="true"] {
+          .plus-button {
+            display: none;
+          }
+        }
+      }
+    }
+    .dropdown-menu {
+      background-color: $black;
+      padding: 0px;
+      margin: 0px;
+      .dropdown-item {
+        width: 220px;
+        background-color: $black;
+        color: $white;
+        font-size: $fontsize-s;
+        padding: 15px 0px 15px 28px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    height: 90px;
+    .navbar {
+      .navbar-brand {
+        margin: 30px;
+        img {
+          width: 140px;
+          height: 24px;
+        }
+      }
+      .navbar-collapse {
+        .navbar-nav {
+          padding-right: 30px;
+          .nav-item {
+            .nav-link {
+              margin: 0px;
+              padding: 35px 20px;
+              transition: color 0.3s;
+            }
+            .dropdown-menu {
+              border-radius: 0;
+              margin: -2px;
+              .dropdown-item {
+                background-color: $black;
+                transition: all 0.3s ease;
+                padding: 18px;
+                &:hover {
+                  background-color: $orange_bistre;
+                }
+              }
+            }
+            &:hover {
+              .nav-link {
+                color: $gray-nobel;
+              }
+              .dropdown-menu {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
