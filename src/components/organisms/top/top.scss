@@ -1,1 +1,27 @@
 @use "../../variables" as *;
+
+.last-assignment-top {
+  .top-img {
+    position: relative;
+    width: 100%;
+  }
+  .top-catchcopy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $white;
+    writing-mode: vertical-rl;
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-xl;
+  }
+  .last-assignment-message {
+    color: $white;
+    background-color: $black;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    .top-catchcopy {
+      font-size: $fontsize-l;
+    }
+  }
+}
