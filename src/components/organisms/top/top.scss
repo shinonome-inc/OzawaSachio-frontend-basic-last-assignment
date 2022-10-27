@@ -1,18 +1,23 @@
 @use "../../variables" as *;
 
 .last-assignment-top {
-  .top-img {
+  .top-img-and-catchcopy {
     position: relative;
-    width: 100%;
-  }
-  .top-catchcopy {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: $white;
-    writing-mode: vertical-rl;
-    font-family: $fontfamily-mincho;
-    font-size: $fontsize-xl;
+    .top-img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .top-catchcopy {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(0, -50%);
+      color: $white;
+      writing-mode: vertical-rl;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-xl;
+      overflow-wrap: normal;
+    }
   }
   .last-assignment-message {
     color: $white;
@@ -20,8 +25,12 @@
   }
 
   @media screen and (max-width: $breakpoint-lg) {
-    .top-catchcopy {
-      font-size: $fontsize-l;
+    .top-img-and-catchcopy {
+      .top-img {
+      }
+      .top-catchcopy {
+        font-size: $fontsize-l;
+      }
     }
   }
 }
