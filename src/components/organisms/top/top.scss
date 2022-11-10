@@ -5,29 +5,46 @@
     position: relative;
     .top-img {
       width: 100%;
+      height: 100vh;
       object-fit: cover;
     }
     .top-catchcopy {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(0, -50%);
+      transform: translate(-50%, -50%);
       color: $white;
       writing-mode: vertical-rl;
       font-family: $fontfamily-mincho;
       font-size: $fontsize-xl;
-      overflow-wrap: normal;
     }
   }
   .last-assignment-message {
     color: $white;
     background-color: $black;
+    .title {
+      padding: 52px 36px 0px;
+    }
+    .description {
+      padding: 0px 36px 74px;
+    }
   }
 
   @media screen and (max-width: $breakpoint-lg) {
     .top-img-and-catchcopy {
+      .top-image {
+        height: 360px;
+      }
       .top-catchcopy {
         font-size: $fontsize-l;
+      }
+    }
+    .last-assignment-message {
+      .title {
+        padding: 32px 20px 0px;
+      }
+      .description {
+        padding: 0px 20px 32px;
       }
     }
   }
