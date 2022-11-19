@@ -3,6 +3,7 @@
 .last-assignment-cards {
   display: flex;
   .last-assignment-card {
+    flex: 1;
     margin-left: 20px;
     margin-bottom: 100px;
   }
@@ -10,7 +11,7 @@
     margin-right: 20px;
   }
 
-  @media screen and (max-width: $breakpoint-sm) {
+  @media screen and (max-width: $breakpoint-md) {
     display: block;
     .last-assignment-card {
       margin-bottom: 40px;
