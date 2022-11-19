@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+
+.last-assignment-about {
+  background-color: $white_smoke;
+  .about-img-container {
+    display: flex;
+    img {
+      width: 25%;
+    }
+  }
+
+  .last-assignment-message {
+    .title {
+      color: $orange_bistre;
+    }
+    .description {
+      font-size: $fontsize-s;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    .about-img-container {
+      flex-wrap: wrap;
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
