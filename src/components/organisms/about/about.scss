@@ -1,28 +1,35 @@
 @use "../../variables" as *;
 
 .last-assignment-about {
-  background-color: $white_smoke;
-  .about-img {
-    display: flex;
-    img {
-      width: 25%;
+  background-color: $white;
+  padding: 0px 16px 100px;
+  .white_smoke-background {
+    background-color: $white_smoke;
+    .about-img-container {
+      display: flex;
+      img {
+        width: 25%;
+      }
     }
-  }
 
-  .last-assignment-message {
-    .title {
-      color: $orange_bistre;
-    }
-    .description {
-      font-size: $fontsize-s;
+    .last-assignment-message {
+      .title {
+        color: $orange_bistre;
+      }
+      .description {
+        font-size: $fontsize-s;
+      }
     }
   }
 
   @media screen and (max-width: $breakpoint-lg) {
-    .about-img {
-      flex-wrap: wrap;
-      img {
-        width: 50%;
+    padding: 0px 135px 40px;
+    .white_smoke-background {
+      .about-img-container {
+        flex-wrap: wrap;
+        img {
+          width: 50%;
+        }
       }
     }
   }
