@@ -2,6 +2,7 @@
 
 .last-assignment-plans {
   .last-assignment-message {
+    margin-top: 56px;
     .title {
       color: $orange_bistre;
       padding-top: 0px;
@@ -33,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
   }
 
   @media screen and (max-width: $breakpoint-md) {
@@ -42,6 +44,9 @@
       .last-assignment-plan {
         margin: 0px auto 24px;
       }
+    }
+    .last-assignment-button-container {
+      margin-bottom: 35px;
     }
   }
 }
