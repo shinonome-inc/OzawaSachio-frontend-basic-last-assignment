@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+
+.last-assignment-cards {
+  display: flex;
+  .last-assignment-card {
+    flex: 1;
+    margin-left: 20px;
+    margin-bottom: 100px;
+  }
+  .last-assignment-card:nth-child(3) {
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: block;
+    .last-assignment-card {
+      margin-bottom: 40px;
+    }
+  }
+}
