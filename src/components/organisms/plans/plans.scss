@@ -1,0 +1,47 @@
+@use "../../variables" as *;
+
+.last-assignment-plans {
+  .last-assignment-message {
+    .title {
+      color: $orange_bistre;
+      padding-top: 0px;
+    }
+    .description {
+      padding-bottom: 0px;
+    }
+  }
+  .last-assignment-plan-container {
+    display: flex;
+    margin: 32px 24px 40px;
+    .last-assignment-plan {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0px 15px 0px;
+      li {
+        flex: 1;
+      }
+    }
+    .last-assignment-plan:nth-child(1) {
+      margin-left: 0px;
+    }
+    .last-assignment-plan:nth-child(3) {
+      margin-right: 0px;
+    }
+  }
+  .last-assignment-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    .last-assignment-plan-container {
+      display: block;
+      margin: 32px auto 0px;
+      .last-assignment-plan {
+        margin: 0px auto 24px;
+      }
+    }
+  }
+}
