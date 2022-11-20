@@ -13,6 +13,12 @@
     }
     .address-and-phone-number-and-open-hours {
       margin: 20px;
+      line-height: 28px;
+    }
+    .sns-and-rss-icons {
+      i {
+        margin-right: 15px;
+      }
     }
   }
   .links {
@@ -32,8 +38,25 @@
 
   .copyright {
     font-family: $fontfamily-gothic;
+    font-size: $fontsize-xs;
+    line-height: 12px;
     background-color: $black;
     color: $white;
     padding: 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      a {
+        width: 50%;
+        padding: 0px;
+      }
+      a + a {
+        border-left: none;
+      }
+    }
   }
 }
