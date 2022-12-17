@@ -16,6 +16,7 @@
     .address-and-phone-number-and-open-hours {
       margin: 20px;
       line-height: 28px;
+      font-size: $fontsize-s;
     }
     .sns-and-rss-icons {
       .icon {
@@ -48,6 +49,7 @@
         text-decoration: none;
         padding: 0px 8px 0px 10px;
         transition: color 0.2s ease;
+        font-size: $fontsize-s;
         &:hover {
           color: $orange_bistre;
         }
@@ -66,6 +68,7 @@
       font-family: $fontfamily-gothic;
       line-height: 12px;
       color: $white;
+      font-size: $fontsize-xs;
     }
   }
 
@@ -82,6 +85,9 @@
       li {
         width: 50%;
         padding: 0px;
+        a {
+          padding: 0px;
+        }
       }
       li + li {
         border-left: none;
