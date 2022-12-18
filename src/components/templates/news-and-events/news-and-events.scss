@@ -5,11 +5,9 @@
   .container {
     padding: 56px 0px;
     .row {
-      .col-md-6 {
+      .col-lg-6 {
         .last-assignment-news {
-          @media screen and (max-width: $breakpoint-lg) {
-            margin-bottom: 35px;
-          }
+          margin-bottom: 35px;
           .article-list {
             article {
               .date {
@@ -20,7 +18,7 @@
         }
       }
 
-      .col-md-6 {
+      .col-lg-6 {
         .events {
           .event-list {
             .event-card {
