@@ -1,0 +1,53 @@
+@use "../../variables" as *;
+
+.last-assignment-news-and-events {
+  background-color: $white_smoke;
+  .container {
+    padding: 56px 0px;
+    .row {
+      .col-lg-6 {
+        .last-assignment-news {
+          margin-bottom: 35px;
+          .article-list {
+            article {
+              .date {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .col-lg-6 {
+        .events {
+          .event-list {
+            .event-card {
+              & > a {
+                .event-caption {
+                  & > h3 {
+                    font-weight: 400;
+                    transition: color 0.2s ease;
+                    cursor: pointer;
+                    overflow: hidden;
+                    white-space: normal;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    &:hover {
+                      color: $orange_bistre;
+                    }
+                    @media screen and (max-width: $breakpoint-lg) {
+                      white-space: nowrap;
+                      display: block;
+                      text-overflow: ellipsis;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

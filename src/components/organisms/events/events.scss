@@ -6,7 +6,7 @@
   align-items: stretch;
   margin-bottom: 35px;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     margin-bottom: 0;
   }
 
@@ -16,7 +16,7 @@
     align-items: stretch;
     margin-bottom: 14px;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       margin-bottom: 30px;
     }
 
@@ -28,7 +28,6 @@
 
         .event-thumbnail {
           display: none;
-          width: 207px;
           overflow: hidden;
 
           & > img {
@@ -37,7 +36,7 @@
           }
 
           &:hover > img {
-            transform: scale(1.2);
+            transform: ease scale(1.2);
           }
         }
 
@@ -67,8 +66,8 @@
           }
         }
 
-        @media (min-width: $breakpoint-md) {
-          height: 134px;
+        @media (min-width: $breakpoint-lg) {
+          height: 155px;
 
           .event-thumbnail {
             display: block;

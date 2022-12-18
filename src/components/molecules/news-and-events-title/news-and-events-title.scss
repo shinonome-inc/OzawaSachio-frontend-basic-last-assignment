@@ -8,7 +8,7 @@
     font-family: $fontfamily-mincho;
     margin-bottom: 32px;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       font-size: $fontsize-xxl;
     }
 
