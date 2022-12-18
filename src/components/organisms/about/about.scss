@@ -2,6 +2,8 @@
 
 .last-assignment-about {
   background-color: $white_smoke;
+  margin-top: 40px;
+  margin-bottom: 40px;
   .about-img-container {
     display: flex;
     img {
@@ -19,6 +21,8 @@
   }
 
   @media screen and (max-width: $breakpoint-lg) {
+    margin-top: 100px;
+    margin-bottom: 100px;
     .about-img-container {
       flex-wrap: wrap;
       img {
