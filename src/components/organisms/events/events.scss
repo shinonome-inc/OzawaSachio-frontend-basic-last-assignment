@@ -28,7 +28,6 @@
 
         .event-thumbnail {
           display: none;
-          width: 207px;
           overflow: hidden;
 
           & > img {
@@ -68,7 +67,7 @@
         }
 
         @media (min-width: $breakpoint-md) {
-          height: 134px;
+          height: 155px;
 
           .event-thumbnail {
             display: block;
