@@ -3,6 +3,9 @@
 .last-assignment-header {
   background-color: $black;
   font-size: $fontsize-s;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
   .navbar {
     margin: 0px;
     padding: 0px;
