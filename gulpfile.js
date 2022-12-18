@@ -9,7 +9,7 @@ gulp.task("default", () =>
     .src("./src/components/**/*.scss")
     .pipe(sass())
     .pipe(concat("style.css"))
-    .pipe(replace("../../../img", "../img"))
+    .pipe(replace("../../../img", "./img"))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./src/page"))
 );
