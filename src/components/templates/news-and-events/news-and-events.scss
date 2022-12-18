@@ -7,7 +7,7 @@
     .row {
       .col-md-6 {
         .last-assignment-news {
-          @media screen and (max-width: $breakpoint-md) {
+          @media screen and (max-width: $breakpoint-lg) {
             margin-bottom: 35px;
           }
           .article-list {
@@ -40,7 +40,7 @@
                     &:hover {
                       color: $orange_bistre;
                     }
-                    @media screen and (max-width: $breakpoint-md) {
+                    @media screen and (max-width: $breakpoint-lg) {
                       white-space: nowrap;
                       display: block;
                       text-overflow: ellipsis;

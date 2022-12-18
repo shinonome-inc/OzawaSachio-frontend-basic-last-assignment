@@ -6,7 +6,7 @@
   align-items: stretch;
   margin-bottom: 35px;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     margin-bottom: 0;
   }
 
@@ -16,7 +16,7 @@
     align-items: stretch;
     margin-bottom: 14px;
 
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       margin-bottom: 30px;
     }
 
@@ -66,7 +66,7 @@
           }
         }
 
-        @media (min-width: $breakpoint-md) {
+        @media (min-width: $breakpoint-lg) {
           height: 155px;
 
           .event-thumbnail {
